@@ -1,0 +1,15 @@
+
+name: Mark stale issues and pull requests
+
+on:
+  pull_request:
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if all manifests are synced
+        run: |
+          sleep 20
+          
